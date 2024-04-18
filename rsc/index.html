@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="css/font-families.css">
+        <link rel="stylesheet" href="css/css/all.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/media-queries.css">
+        <link rel="stylesheet" href="notification-box/notification_styles.css">
+
+        <script defer src="js/index.js"></script>
+        <script defer src="js/intersection_observer.js"></script>
+        <script defer src="notification-box/notification_funcs.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>MY PORTFOLIO</h1>
+            <nav id="inline-menu">
+                <a href="#about">ABOUT ME</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#courses">COURSES</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+            <a href="file/Resume for Aminu Adamu Aminu.pdf" target="_blank">
+                <button class="view-cv head-cv">VIEW CV</button>
+            </a>
+            <i class="fas fa-bars open-menu"></i>
+            <nav id="full-screen-menu">
+                <i class="fas fa-times close-menu"></i>
+                <a href="#about">ABOUT ME</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#courses">COURSES</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </header>
+        <div id="about">
+            <div class="details">
+                <p class="hello-text">HELLO, OVER THERE!</p>
+                <p class="my-name-text">My name is <span class="full-name-text">AMINU ADAMU AMINU.</span></p>
+                <p class="description">
+                    A passionate and talented  graduate with a strong passion for software development and technology.
+                    Completed FreeCodeCamp Back End Development and APIs Certification. Furthermore, completed 
+                    ALX Software Engineering Programme with a specialization in Front End Development. Looking 
+                    forward to work in a fast-faced organization to contribute to its success by leveraging effective
+                    project collaboration capabilities to develop user-friendly and responsive web applications.
+                </p>
+                <a href="file/Resume for Aminu Adamu Aminu.pdf" target="_blank">
+                    <button style="margin-top: 1rem;" class="view-cv">VIEW CV</button>
+                </a>
+            </div>
+        </div>
+        <div id="projects">
+            <p class="section-title">MY PROJECTS</p>
+            <div class="project-cards">
+                <div class="project-card hidden">
+                    <p class="card-title">Restaurant Website</p>
+                    <div class="card-image">
+                        <img src="imgs/restaurant/shopping area.png" alt="Card image">
+                    </div>
+                    <button class="info-button">More Info</button>
+                </div>
+                <div class="project-card hidden">
+                    <p class="card-title">Timer Application</p>
+                    <div class="card-image">
+                        <img src="imgs/timer/timers.png" alt="Card image">
+                    </div>
+                    <button class="info-button">More Info</button>
+                </div>
+                <div class="project-card hidden">
+                    <p class="card-title">School Website</p>
+                    <div class="card-image">
+                        <img src="imgs/school/homepage.png" alt="Card image">
+                    </div>
+                    <button class="info-button">More Info</button>
+                </div>
+            </div>
+        </div>
+        <div id="courses">
+            <p class="section-title">COURSES AND EDUCATION</p>
+            <div class="courses">
+                <div class="course hidden">
+                    <p class="card-title">Foundational C# Course</p>
+                    <p>At Learn Microsoft</p>
+                </div>
+                <div class="course hidden">
+                    <p class="card-title">Back End Development and APIs</p>
+                    <p>At FreeCodeCamp.org</p>
+                </div>
+                <div class="course hidden">
+                    <p class="card-title">Software Engineering with Front End Specialization</p>
+                    <p>At ALX</p>
+                </div>
+                <div class="course hidden">
+                    <p class="card-title">JavaScript Course</p>
+                    <p>At EDUCBA</p>
+                </div>
+                <div class="course hidden">
+                    <p class="card-title">B. Sc. Biotechnology</p>
+                    <p>At Federal University Dutse</p>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <p class="section-title">Contact Me</p>
+            <div class="form">
+                <input id="name-field" type="text" placeholder="Your name in here...">
+                <input id="email-field" type="email" placeholder="Your email in here...">
+                <textarea id="text" placeholder="Type your message in here..."></textarea>
+                <button class="send-button">Send</button>
+            </div>
+            <p>Alternatively, you can send an email to me via aminunawwarah@gmail.com.</p>
+        </div>
+        <div class="project-information">
+            <i class="fas fa-times close-information"></i>
+            <div class="project-information-content">
+                <p class="section-title">Restaurant Website</p>
+                <p class="project-description">
+                    The Restaurant Website, named Noor Kitchen, is a website where snacks, desserts, and food can be
+                    purchased. Visitors can search for items, can create an account or sign in and can also make 
+                    comments or view comments posted by others. Once signed in, the user will be taken to the shopping
+                    area where purchasable items are displayed. Items information can be viewed. The user will add an
+                    item to the shopping cart if wished to purchase. A transaction receipt will be downloaded immediately if
+                    the purchase is successful. There is an icon where the users can be taken to their
+                    dashboard. Users can view their transactions history or delete any record they don't need.
+                    Users can also update or delete their account.
+                </p>
+                <div class="gallery">
+                    <div class="screenshot hidden">
+                        <p>The Homepage</p>
+                        <img src="imgs/restaurant/homepage.png" alt="Homepage">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>About</p>
+                        <img src="imgs/restaurant/about section.png" alt="About">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Product Samples</p>
+                        <img src="imgs/restaurant/sample.png" alt="Sample">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Responsive Menu</p>
+                        <img src="imgs/restaurant/responsive menu.png" alt="Responsive menu">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Item Search</p>
+                        <img src="imgs/restaurant/search.png" alt="Item search">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Search Result</p>
+                        <img src="imgs/restaurant/result.png" alt="Search Result">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Sign in</p>
+                        <img src="imgs/restaurant/signin.png" alt="Sign in">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Sign up</p>
+                        <img src="imgs/restaurant/signup.png" alt="Sign up">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Shopping Area</p>
+                        <img src="imgs/restaurant/shopping area.png" alt="Shopping area">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Shopping Cart</p>
+                        <img src="imgs/restaurant/shopping cart.png" alt="Shopping cart">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Customer Dashboard</p>
+                        <img src="imgs/restaurant/customer dashboard.png" alt="Customer Dashboard">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Responsive Transactions View</p>
+                        <img src="imgs/restaurant/transactions.png" alt="Responsive transactions view">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-information">
+            <i class="fas fa-times close-information"></i>
+            <div class="project-information-content">
+                <p class="section-title">Timer Application</p>
+                <p class="project-description">
+                    The Timer Application, named Noor Timer, is a web timer application where users can create a timers. It looks
+                    very similar to a stop watch. But unlike a stop watch Noor Timer allows users to create multiples timers
+                    at the same time. Each timer will have a title and a description. The application is built with a customized
+                    menu. Users can update or delete their account if they wish.
+                </p>
+                <div class="gallery">
+                    <div class="screenshot hidden">
+                        <p>The homepage</p>
+                        <img src="imgs/timer/homepage.png" alt="Homepage">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>The login page</p>
+                        <img src="imgs/timer/login.png" alt="Login page">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Timers</p>
+                        <img src="imgs/timer/timers.png" alt="Timers">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Menu</p>
+                        <img src="imgs/timer/menu.png" alt="Menu">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Manage Account page</p>
+                        <img src="imgs/timer/update information.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-information">
+            <i class="fas fa-times close-information"></i>
+            <div class="project-information-content">
+                <p class="section-title">School Website</p>
+                <p class="project-description">
+                    The School Website is built with basic functionalities that most school websites have. It is built
+                    with a complex Students Results Management System (SRMS). This is where students' results are processed,
+                    uploaded, updated, downloaded, and deleted. The website is also with a section where the school financial
+                    records are managed. This is where the financial officer will enter a financial record, fetch a record,
+                    and view all the school financial records.
+                </p>
+                <div class="gallery">
+                    <div class="screenshot hidden">
+                        <p>The homepage</p>
+                        <img src="imgs/school/homepage.png" alt="The homepage">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Sign in page</p>
+                        <img src="imgs/school/signin.png" alt="Sign in page">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Parents Dashboard</p>
+                        <img src="imgs/school/parent dashboard.png" alt="Parents dashboard">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Parents Dashboard Menu</p>
+                        <img src="imgs/school/parents menu.png" alt="Parents dashboard menu">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Parents Result Management System</p>
+                        <img src="imgs/school/parents srms.png" alt="Parents srms">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Principal Dashboard</p>
+                        <img src="imgs/school/principal dashboard.png" alt="Principal dashboard">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Principal SRMS</p>
+                        <img src="imgs/school/principal srms.png" alt="Principal srms">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Processing a New Result</p>
+                        <img src="imgs/school/process result.png" alt="New result processing">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Subject Score Fields</p>
+                        <img src="imgs/school/scores.png" alt="Score fields">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Result Preview Before Upload</p>
+                        <img src="imgs/school/preview.png" alt="Result preview">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Fetching a Result</p>
+                        <img src="imgs/school/result details.png" alt="Result details">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Financial Officer Dashboard</p>
+                        <img src="imgs/school/finance.png" alt="Financial officer dashboard">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>General Financial Records</p>
+                        <img src="imgs/school/general record.png" alt="General financial records">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Fetching a Specific Record</p>
+                        <img src="imgs/school/fetch record.png" alt="Fetching specific record">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Entering a Financial Record</p>
+                        <img src="imgs/school/enter record.png" alt="Entering a financial record">
+                    </div>
+                    <div class="screenshot hidden">
+                        <p>Messages to The Financial Officer</p>
+                        <img src="imgs/school/finance messages.png" alt="Financial officer messages">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 

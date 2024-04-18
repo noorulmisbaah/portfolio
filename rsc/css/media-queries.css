@@ -1,0 +1,72 @@
+@media screen and (max-width: 850px) {
+    #inline-menu {
+        display: none;
+    }
+
+    #full-screen-menu {
+        left: 0;
+        display: flex;
+    }
+
+    #full-screen-menu a {
+        color: #FFFFFF;
+        text-decoration: none;
+        transition: 0.5s ease all;
+    }
+
+    #full-screen-menu a:hover {
+        color: #FFBB00;
+    }
+
+    .head-cv {
+        display: none;
+    }
+
+    .open-menu {
+        display: inline;
+    }
+
+    .details {
+        width: 80%;
+    }
+
+    .screenshot {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #about,
+    #projects,
+    #courses,
+    #contact {
+        padding: 4rem 1rem;
+    }
+
+    .project-card,
+    .card-image,
+    .course,
+    .details,
+    .screenshot {
+        width: 100%;
+    }
+
+    .course {
+        height: 12rem;
+    }
+
+    .project-information,
+    .project-information-content {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    * {
+        font-size: 17px;
+    }
+
+    .send-button {
+        width: 100%;
+    }
+}
